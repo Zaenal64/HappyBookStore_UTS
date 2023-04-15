@@ -1,0 +1,28 @@
+//membuat controller
+php artisan make:controller BookController
+php artisan make:controller CategoryController
+php artisan make:controller ContactController
+php artisan make:controller Controller
+php artisan make:controller HomeController
+
+//membuat migration
+php artisan make:migration create_categories_table
+php artisan make:migration create_books_table
+php artisan make:migration create_details_table
+
+//membuat model
+php artisan make:model Book
+php artisan make:model Category
+php artisan make:model Detail
+
+//membuat seeder
+php artisan make:seeder BookSeeder
+php artisan make:seeder CategorySeeder
+php artisan make:seeder DatabaseSeeder
+php artisan make:seeder DetailSeeder
+
+//memasukan data ke database phpmyadmin
+php artisan migrate:fresh --seed
+
+//menjalankan laravel
+php artisan serve
